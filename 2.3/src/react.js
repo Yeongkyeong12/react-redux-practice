@@ -14,6 +14,8 @@ export function createDOM(Node) {
 }
 
 export function createElement(tag, props, ...children) {
+  // 방어 코드
+  props = props || {};
   return { tag, props, children };
 }
 
