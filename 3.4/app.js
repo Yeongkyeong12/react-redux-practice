@@ -7,5 +7,5 @@ store.subscribe(function () {
   console.log(store.getState());
 });
 
-store.send({ type: "increase" });
-store.send({ type: "increase" });
+store.dispatch({ type: "increase" });
+store.dispatch({ type: "increase" });
